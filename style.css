@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-body{
+.principal{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,7 +7,12 @@ body{
     font-family: "Roboto", sans-serif;
 }
 
-form{
+.principal{
+    background: url("./assets/img/Ensitech.png")center/cover;
+    min-height: 100vh;
+}
+
+.form{
     margin-top: 20px;
     background-color: #fff;
     padding: 40px 60px;
@@ -15,19 +20,19 @@ form{
     max-width: 300px;
 }
 
-form h1{
+.form h1{
     color: chocolate;
     text-align: center;
 }
 
-form .social-media{
+.form .social-media{
     margin-top: -10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-form .social-media p{
+.form .social-media p{
     padding: 5px;
     margin-left: 10px;
     border: 1px solid #545454;
@@ -37,16 +42,16 @@ form .social-media p{
     cursor: pointer;
 }
 
-form p.choose-email{
+.form p.choose-email{
     text-align: center;
 }
 
-form .inputs{
+.form .inputs{
     display: flex;
     flex-direction: column;
 }
 
-form .inputs input[type="email"], input[type="password"]{
+.form .inputs input[type="email"], input[type="password"]{
     padding: 15px;
     border-radius: 5px;
     border: none;
@@ -55,17 +60,17 @@ form .inputs input[type="email"], input[type="password"]{
     outline: none;
 }
 
-form p.inscription{
+.form p.inscription{
     font-size: 14px;
     margin-bottom: 20px;
     color: #878787;
 }
 
-form p.inscription span{
+.form p.inscription span{
     color: #eb7371;
 }
 
-form button{
+.form button{
     padding: 15px 25px;
     border: none;
     border-radius: 5px;
@@ -74,4 +79,234 @@ form button{
     background-color: #eb7371;
     outline: none;
     cursor: pointer;
+}
+button{
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #fff;
+    background-color: #eb7371;
+    outline: none;
+    cursor: pointer;
+}
+
+
+
+h1{
+    text-align: center;
+    color: green;
+}
+
+h2{
+    margin: 0;
+}
+
+h3, h6{
+    margin: 50px;
+}
+
+h3{
+    margin-top: 50px;
+    color: #aa008e;
+}
+
+th{
+    color: red;
+}
+
+main{
+    min-height: 500px;
+    background: #a1a0a0c9;
+    width: 90%;
+    margin: 0 auto;
+    border: paleturquoise 2px solid;
+    border-radius: 10px;
+}
+
+.img-class {
+    display: flex;
+    margin: 50px;
+}
+
+.image {
+    display: block;
+    width: 100%;
+}
+
+.img-class p{
+    margin: 30px;
+    font-size: medium;
+}
+
+
+
+span {
+    color: red;
+}
+
+strong {
+    display: flex;
+    margin-left: 720px;
+    margin-top: -550px;
+}
+
+.flexbox {
+    border: 2px solid skyblue;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    margin: 15px;
+}
+.flexbox ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.flexbox li {
+    list-style: none;
+    height: 160px;
+    width: 160px;
+    margin: 10px;
+    background: turquoise;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.grid img{
+    width: 80%;
+    margin-top: 20px;
+}
+
+.formulaire-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "il i2"
+    "ta ta"
+    "vi bt";
+}
+
+.formulaire-grid input, textarea{
+    margin: 5px;
+    border: 1px solid darkblue;
+    padding: 5px;
+    font-size: 1.1rem;
+    font-family: serif;
+    border-radius: 5px;
+}
+
+.text{
+    font-weight: bold;
+}
+
+textarea{
+    grid-area: ta;
+    height: 40px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 70%;
+    align-items: center;
+    margin: 0 auto;
+}
+
+th, td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+#btn-submit{
+    grid-area: bt;
+    cursor: pointer;
+    padding: 3px;
+    background: turquoise;
+}
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav li {
+    float: left;
+  }
+  
+  nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  nav li a:hover {
+    background-color: #14ce3c;
+  }
+  
+
+@media screen and (max-width: 900px) {
+    .grid-container{
+        display: block;
+    }
+    .img-class{
+        display: block;
+    }
+    .text{
+        display: block;
+    }
+    .objis{
+        display: block;
+    }
+
+    .grid-container img{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .flexbox ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formulaire-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "i1"
+        "i2"
+        "ta"
+        "bt";
+    }
+
+    .img-class{
+        display: block;
+    }
+    .text{
+        display: block;
+    }
+    strong {
+        display: block;
+        margin-left: 75px;
+        margin-top: -300px;
+        margin-bottom: 5px;
+    }
 }

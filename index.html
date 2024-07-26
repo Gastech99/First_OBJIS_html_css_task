@@ -10,8 +10,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
   </head>
-  <body>
-    <form>
+  <body class="principal">
+    <form class="form">
       <h1>Se connecter</h1>
       <div class="social-media">
         <p>
@@ -23,15 +23,18 @@
       </div>
       <p class="choose-email">ou utiliser mon addresse e-mail:</p>
       <div class="inputs">
-        <input type="email" placeholder="Email" />
-        <input type="password" placeholder="Mot de passe" />
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Mot de passe" required />
       </div>
       <p class="inscription">
         Je n'ai pas de <span>compte</span>. J'en <span> crée</span> un.
       </p>
       <div align="center">
-        <button type="submit">Se connecter</button>
+        <button type="submit">
+          <a href="./pages/accueil.html">Se connecter</a>
+        </button>
       </div>
     </form>
+    <script type="text/JavaScript" src="script.js"></script>
   </body>
 </html>
